@@ -1,0 +1,1 @@
+docker run -t -d -v ${PWD}/images:/images --name my_container part1
