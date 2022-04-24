@@ -1,0 +1,15 @@
+To test multi channel server and client I opened 6 terminals. One for server, two for clients of one channel, two for clients of another channel and last one for client of "ALL" channel.
+
+Initiation of server:
+
+python mc_server.py <ip> <post_port> <pub_port>
+
+
+Initiation of clinets:
+
+python mc_client.py <ip> <post_port> <pub_port> <channel> <name>
+
+
+Further test was done by sending messages on different channels and observing which clinets print the messages sent on different channels. In testing the code works correctly and messages of a single channel are only printed by clients of that channel or "ALL" client. Also "ALL" client cannot send messages.
+
+
